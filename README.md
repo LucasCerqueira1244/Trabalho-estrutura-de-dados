@@ -12,3 +12,6 @@ O problema pede para analisarmos uma matriz 6x6, e se possa criar um algoritmo q
 
 # Problema inicial:
 
+![Captura de tela de 2023-03-29 16-33-57](https://user-images.githubusercontent.com/109089875/228651169-4f34e11c-6de3-4f05-846b-06806e22c4a9.png)
+
+# Solução
