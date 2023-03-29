@@ -18,6 +18,8 @@ O problema pede para analisarmos uma matriz 6x6, e se possa criar um algoritmo q
 
 ![Captura de tela de 2023-03-29 16-52-05](https://user-images.githubusercontent.com/109089875/228652049-f41ba35d-9e38-4acb-a88e-114409b5f686.png)
 ![Captura de tela de 2023-03-29 17-50-02](https://user-images.githubusercontent.com/109089875/228664125-67ce45c3-0ccc-459a-ae08-c03d8ec2915d.png)
+![Captura de tela de 2023-03-29 17-52-27](https://user-images.githubusercontent.com/109089875/228665701-ec9eaff8-ab28-4cd4-a347-d4b4f73cd96d.png)
+
 
 # Gráfico Big O:
 
