@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import timeit
+
 matriz = [[1, 1, 1, 0, 0, 0],
           [0, 1, 0, 0, 0, 0],
           [1, 1, 1, 0, 0, 0],
@@ -51,3 +54,37 @@ for linha in matriz:
 print(f'Foram encontrados: {cont_1} elementos de número 1 e seu total é {soma}\n'
       f'Foram encontrados: {cont_2} elementos de número 2 e seu total é {soma2}\n'
       f'Foram encontrados: {cont_4} elementos de número 4 e seu total é {soma4}')
+
+# Define uma função que calcula o número de operações para um tamanho de entrada específico
+def num_operacoes(n):
+    matriz = [[1] * n for _ in range(n)]
+    posicao = []
+    for i, linha in enumerate(matriz):
+        for j, valor in enumerate(linha):
+            posicao.append((valor, (i, j)))
+    posicao_ordem = sorted(posicao)
+    cont_1 = sum(linha.count(1) for linha in matriz)
+    soma_1 = 1 * cont_1
+    cont_2 = matriz.count(2)
+    soma_2 = 2 * cont_2
+    cont_4 = matriz.count(4)
+    soma_4 = 4 * cont_4
+    return cont_1 + cont_2 + cont_4
+
+# Cria um array com os tamanhos de entrada
+tamanhos = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+# Cria um array com o número de operações para cada tamanho de entrada
+operacoes = []
+for tamanho in tamanhos:
+    # Mede o tempo de execução do algoritmo para o tamanho de entrada atual
+    tempo = timeit.timeit(lambda: num_operacoes(tamanho), number=100)
+    operacoes.append(tempo)
+
+# Plota o gráfico
+plt.plot(tamanhos, operacoes, label='Complexidade de tempo')
+plt.xlabel('Tamanho da entrada (número de elementos na matriz)')
+plt.ylabel('Número de operações')
+plt.title('Gráfico da notação Big O (O(n^2))')
+plt.legend()
+plt.show()
