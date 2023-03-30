@@ -1,7 +1,7 @@
 ![logo_horizontal_univasso](https://user-images.githubusercontent.com/109089875/228641712-ede3aeb8-d3b2-4060-9376-66a921b60c76.svg)
 
 # Curso: Engenharia de Software<br>
-# Membros: Lucas Cerqueira, Kauã Arruda, Gabriel Vidal e Fabrício Souza<br>
+# Membros: Lucas Cerqueira - (202211189), Kauã Arruda - (202211399), Gabriel Vidal - (202212035) e Fabrício Souza - (202211012)<br>
 # Disciplina: Estrutura de Dados<br>
 # Período: 3º<br>
 # Professor: Marcío Garrido<br>
